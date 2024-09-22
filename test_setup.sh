@@ -1,5 +1,7 @@
 #!/bin/bash
 
+LOG_FILE="test.log"
+
 IMAGE_NAME="deb_conf_test"
 
 for id in $(docker ps -aq); do docker rm $id; done
@@ -10,5 +12,6 @@ fi
 
 docker build -t $IMAGE_NAME .
 
-docker run -it --name $IMAGE_NAME $IMAGE_NAME > test.log
+echo "See $LOG_FILE for test logs."
+docker run -it --name $IMAGE_NAME $IMAGE_NAME > $LOG_FILE
 
