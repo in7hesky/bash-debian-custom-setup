@@ -13,9 +13,10 @@ apt update -y && apt upgrade -y
 apt install nala -y
 
 echo "Installing apps from list"
-xargs -a ./config/apps.list nala install -y
+#xargs -a ./config/apps.list nala install -y
 
 echo "Running installation scripts"
+./scripts/docker_install.sh
 
 echo "Configuring apps"
 
