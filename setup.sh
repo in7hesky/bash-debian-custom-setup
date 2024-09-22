@@ -17,6 +17,7 @@ echo "Installing apps from list"
 
 echo "Running installation scripts"
 ./scripts/docker_install.sh
+./scripts/chrome_install.sh
 
 echo "Configuring apps"
 
