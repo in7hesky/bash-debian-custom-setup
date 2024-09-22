@@ -1,6 +1,6 @@
 FROM debian
 
-WORKDIR /home/in7
+WORKDIR /home/in7/debconf
 
 COPY . .
 

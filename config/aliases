@@ -1,0 +1,6 @@
+alias c="clear"
+alias n="nala"
+alias sudo="sudo "
+alias reboot="sudo shutdown -r now"
+alias doc="docker"
+alias nf="neofetch"
